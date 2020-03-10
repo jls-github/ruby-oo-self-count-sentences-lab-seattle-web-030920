@@ -17,6 +17,7 @@ class String
   def count_sentences
     total = 0 
     self.split(" ").each {|word| word.sentence? || word.question? || word.exclamation? ? total += 1 : nil}
+    return total
   end
   
 end
